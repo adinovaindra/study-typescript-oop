@@ -12,8 +12,8 @@ describe("Polymorphism", () => {
 
   function sayHello(employee: Employee): void {
     if (employee instanceof VicePresident) {
-      const VicePresident = employee as VicePresident;
-      console.log(`Hello vice president ${VicePresident.name}. Your role is a ${VicePresident.job}`);
+      const vicePresident = employee as VicePresident;
+      console.log(`Hello vice president ${vicePresident.name}. Your role is a ${vicePresident.job}`);
     } else if (employee instanceof Manager) {
       const manager = employee as Manager;
       console.log(`Hello manager ${manager.name}. Your role is a ${manager.job}`);
